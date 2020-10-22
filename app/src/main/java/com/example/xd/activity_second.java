@@ -22,5 +22,13 @@ public class activity_second extends AppCompatActivity {
                 startActivity(intent_1);
             }
         } );
+        ImageView imageView5 = (ImageView) findViewById(R.id.imageView5);
+        imageView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_1 = new Intent( activity_second.this,activity_third.class);
+                startActivity(intent_1);
+            }
+        } );
     }
 }
